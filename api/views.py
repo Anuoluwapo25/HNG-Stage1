@@ -1,5 +1,5 @@
 from rest_framework.views import APIView
-from rest.framework.response import Response
+from rest_framework.response import Response
 from rest_framework import status
 from api.utils import is_prime, is_perfect, is_armstrong, digit_sum, get_fun_fact
 

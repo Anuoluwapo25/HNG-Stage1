@@ -3,5 +3,5 @@ from .views import ClassifyNum
 
 
 urlpatterns = {
-    path('api/', ClassifyNum.as_views, name="numapi")
+    path('api/classify-number/', ClassifyNum.as_view(), name="numapi")
 }
