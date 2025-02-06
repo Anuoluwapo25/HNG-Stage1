@@ -1,14 +1,14 @@
 # Project Title
 
-This project is a simple FastAPI application that provides student information through an API endpoint.
+This project takes a number and returns interesting mathematical properties and a fun fact through an API endpoint.
 
 ## Setup Instructions
 
 1. **Clone the repository**:
     ```sh
-    git clone https://github.com/Anuoluwapo25/HNG-Stage1
+    git clone https://github.com/Anuoluwapo25/HNG-Stage2
 
-    cd HNG-Stage1
+    cd HNG-Stage2
     ```
 
 2. **Create and activate a virtual environment**:
