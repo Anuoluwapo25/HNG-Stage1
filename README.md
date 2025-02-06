@@ -6,9 +6,9 @@ This project takes a number and returns interesting mathematical properties and 
 
 1. **Clone the repository**:
     ```sh
-    git clone https://github.com/Anuoluwapo25/HNG-Stage2
+    git clone https://github.com/Anuoluwapo25/HNG-Stage1
 
-    cd HNG-Stage2
+    cd HNG-Stage1
     ```
 
 2. **Create and activate a virtual environment**:
