@@ -5,14 +5,14 @@ from api.utils import is_prime, is_perfect, is_armstrong, digit_sum, get_fun_fac
 
 
 class ClassifyNum(APIView):
-    def POST(self, request):
+    def get(self, request):
         num = request.GET.get('number')
 
-        if not num or num.isdigit():
+        if not num or not num.isdigit():
              return Response ({
                   "number": "alphabet",
                   "error": True
-                }, status=status.HTTP_400_Bad_REQUEST)
+                }, status=400)
         
         num = int(num)
         properties = []
@@ -25,9 +25,9 @@ class ClassifyNum(APIView):
 
         return Response({
                 "number": num,
-                "is_prime": is_prime,
-                "is_perfect": is_perfect,
-                "properties": is_armstrong,
-                "digit_sum": digit_sum,
-                "fun_fact": get_fun_fact
+                "is_prime": is_prime(num),
+                "is_perfect": is_perfect(num),
+                "properties": properties,
+                "digit_sum": digit_sum(num),
+                "fun_fact": get_fun_fact(num)
         })
