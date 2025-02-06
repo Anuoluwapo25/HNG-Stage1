@@ -8,9 +8,9 @@ class ClassifyNum(APIView):
     def get(self, request):
         num = request.GET.get('number')
 
-        if not num or not num.isdigit():
+        if not num or not num == "":
              return Response ({
-                  "number": "alphabet",
+                  "number": None,
                   "error": True
                 }, status=400)
         
