@@ -41,7 +41,7 @@ def is_armstrong(n):
     return sum(d ** power for d in digits) == n
     
 
-def get_fun_fact(n):
+def fun_fact(n):
     url = f"http://numbersapi.com/{n}/math"
     response = requests.get(url)
     return response.text if response.status_code == 200 else "No fun fact available"
