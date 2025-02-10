@@ -1,4 +1,4 @@
-# Project Title
+# Number Api
 
 This project takes a number and returns interesting mathematical properties and a fun fact through an API endpoint.
 
